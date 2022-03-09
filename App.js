@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useState } from 'react';
 import { Text, View, StyleSheet, TextInput, Image, Button,  } from 'react-native';
 import Constants from 'expo-constants';
 
@@ -8,10 +7,6 @@ import AssetExample from'./components/AssetExample' ;
 
 // or any pure javascript modules available in npm
 import { Card } from 'react-native-paper';
-
-const use = () => {
-  const [text, setText] = useState('');
-}
 
 export default function App() {
   return (
@@ -22,8 +17,6 @@ export default function App() {
       <Text style={styles.label}> Senha: </Text>
       <TextInput style={styles.campo}
         placeholder="Digite seu login"
-        use(),
-        }
       />
       <View style={styles.exemplo}></View>
       <Button style={styles.botao}
@@ -61,3 +54,4 @@ const styles = StyleSheet.create({
     marginRight: 10
   },
 });
+
